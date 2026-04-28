@@ -3,31 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="top">
-        <h1>To Do List</h1>
-        <div class="input-group">
-          <input type="text" id="todo" placeholder="Enter a task..." />
-          <button id="add">Add Task</button>
-        </div>
-      </div>
-      <div class="list">
-        <h2>Pending Tasks</h2>
-        <hr>
-        <ul id="pending-list">
-        </ul>
-      </div>
-      <div class="completed">
-        <h2>Completed Tasks</h2>
-        <hr>
-        <ul id="completed-list">
-        </ul>
-      </div>
+    <!-- NAV BAR -->
+    <div class="navbar">
+        <h1>BookSky</h1>
     </div>
+
+    <!-- CARD -->
+     <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic deleniti iure dignissimos provident? Reiciendis repellendus velit consectetur facere earum modi provident iusto ex officia! At ex cumque repellendus a fugit?</p>
+            <button onclick="deletebtn(event)" class="delete-btn">Delete</button>
+        </div>
+     </div>
+
+     <div class="overlay"></div>
+     <div class="popup">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title" required/>
+            <input type="text" placeholder="Book Author" id="book-author" required/>
+            <textarea placeholder="Short Description" id="book-description" required></textarea>
+            <div class="popup-buttons">
+                <button id="add-book">Add</button>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
+        </form>
+     </div>
+
+
+     <button class="add-btn" id="add-pop-btn">+</button>
+
+
+
+
+
     <script src="script.js"></script>
   </body>
 </html>
