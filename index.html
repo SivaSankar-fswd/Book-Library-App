@@ -24,21 +24,22 @@
             <h2>Rich Dad Poor Dad</h2>
             <h5>Robert</h5>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic deleniti iure dignissimos provident? Reiciendis repellendus velit consectetur facere earum modi provident iusto ex officia! At ex cumque repellendus a fugit?</p>
-            <button onclick="deletebtn(event)"id="delete-btn">Delete</button>
+            <button onclick="deletebtn(event)" class="delete-btn">Delete</button>
         </div>
      </div>
 
      <div class="overlay"></div>
      <div class="popup">
         <h2>Add Book</h2>
-        <form >
-            <input type="text" placeholder="Book Title" id="book-title" required/><br>
-            <input type="text" placeholder="Book Author" id="book-author" required/><br>
-            <textarea placeholder="Short Description" id="book-description" required ></textarea><br>
-            <button id="add-book">Add</button>
-            <button id="cancel">Cancel</button>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title" required/>
+            <input type="text" placeholder="Book Author" id="book-author" required/>
+            <textarea placeholder="Short Description" id="book-description" required></textarea>
+            <div class="popup-buttons">
+                <button id="add-book">Add</button>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
         </form>
-
      </div>
 
 
